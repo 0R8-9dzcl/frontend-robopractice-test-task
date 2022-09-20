@@ -1,7 +1,6 @@
 export const getUsersData = () => {
 	return fetch('http://localhost:8080/api/users', {
 		method: 'GET',
-		headers: { 'Content-Type': 'application/json'},
 })
 .then(res => {
 	if(res.ok) {
