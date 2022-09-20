@@ -48,7 +48,6 @@ for(let i=1; i<=31; i++) {
         sorter: (a, b) => toMin(a[`Day${i}`]) - toMin(b[`Day${i}`]),
     };
     columns[i] = obj;
-    console.log(columns)
 }
 columns.push({
     title: 'Summary',
