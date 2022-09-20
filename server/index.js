@@ -1,11 +1,13 @@
-const express = require('express')
+const express = require('express');
+const cors = require('cors');
 const app = express()
 const port = 8080
 
-app.get('/api/users', (req, res) => {
+app.use(cors())
+;app.get('/api/users', (req, res) => {
   res.send(
       require('./data.json')
-  )
+  );
 })
 
 app.listen(port, () => {
